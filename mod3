@@ -1,0 +1,17 @@
+word = input("Enter a word: ")
+repeat_times = int(input("How many times would you like the word repeated? "))
+print(word * repeat_times)
+name = input("What is your name? ")
+age = int(input("What is your age? "))
+next_age = age + 1
+print("Hello, " + name + "! You are " + str(age) + " years old. Next year, you will be " + str(next_age) + " years old.")
+sentence = input("Enter a sentence: ")
+search_word = input("Enter a word to find in the sentence: ")
+found = search_word in sentence
+print(found)
+word_to_slice = input("Enter a word to slice: ")
+first_index = int(input("Enter the first index: "))
+last_index = int(input("Enter the last index: "))
+sliced_word = word_to_slice[first_index:last_index]
+print(sliced_word)
+print("apple", "banana", "cherry", sep="|")
