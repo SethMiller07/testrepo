@@ -1,0 +1,8 @@
+with open("poll.txt", "r") as file:
+    data = file.read().lower().strip()
+votes = data.split(",")
+yea_count = votes.count("yea")
+nay_count = votes.count("nay")
+print("Poll Results:")
+print(f"Yea: {yea_count}")
+print(f"Nay: {nay_count}")
