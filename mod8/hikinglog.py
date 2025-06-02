@@ -5,8 +5,6 @@ with open("hiking_log.txt", "a") as file:
             break
         distance = input("Enter distance in miles: ")
         file.write(f"{hike_name} - {distance} miles\n")
-
-# Read and display the log
 print("\nYour Hiking Log:")
 with open("hiking_log.txt", "r") as file:
     for line in file:
