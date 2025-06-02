@@ -1,0 +1,7 @@
+with open("gardening_tips.txt", "w") as file:
+    file.write("Water your plants early in the morning to reduce evaporation.\n")
+    file.write("Use compost to enrich your soil naturally.\n")
+    file.write("Group plants with similar watering needs together.\n")
+with open("gardening_tips.txt", "r") as file:
+    for i, tip in enumerate(file, start=1):
+        print(f"Tip {i}: {tip.strip()}")
